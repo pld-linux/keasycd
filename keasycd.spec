@@ -1,12 +1,16 @@
 Summary:	KEasyCD - KDE CD recording frontend
+Summary(pl):	KEasyCD - frontend KDE do nagrywania CD
 Name:		keasycd
 Version:	0.1.8
 Release:	1
-Group:		X11/KDE/Applications
-Group(de):	X11/KDE/Applikationen
-Group(pl):	X11/KDE/Aplikacje
 License:	GPL
 Vendor:		Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
+Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/multimedia/cdrom/%{name}-%{version}.tar.gz
 URL:		http://
 BuildRequires:	qt-devel >= 1.30
@@ -20,17 +24,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KEasyCD is a CD recording frontend for cdrecord, cdda2wav, cdparanoia,
 and mkisofs.
 
+%description -l pl
+KEasyCD jest s³u¿±cym do nagrywania CD frontendem KDE do programów
+cdrecord, cdda2wav, cdparanoia i mkisofs.
+
 %prep
 %setup -q -n %{name}
 
 %build
 CXXFLAGS="%{rpmcflags}" 
-CFLAGS="%{rpmcflags} -I%{_prefix}/include/qt" 
+CFLAGS="%{rpmcflags} -I%{_includedir}/qt" 
 
 %configure2_13 \
 	--prefix=%{_prefix} \
-	--with-qt-dir=%{_prefix}/include/qt \
-	--with-qt-includes=%{_prefix}/include/qt \
+	--with-qt-dir=%{_includedir}/qt \
+	--with-qt-includes=%{_includedir}/qt \
 	--with-install-root=$RPM_BUILD_ROOT
 	
 %{__make} 
