@@ -6,11 +6,6 @@ Release:	1
 License:	GPL
 Vendor:		Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(es):	X11/Aplicaciones
-Group(pl):	X11/Aplikacje
-Group(pt_BR):	X11/Aplicações
-Group(pt):	X11/Aplicações
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/multimedia/cdrom/%{name}-%{version}.tar.gz
 URL:		http://
 BuildRequires:	qt-devel >= 1.30
