@@ -7,7 +7,7 @@ Group(de):	X11/KDE/Applikationen
 Group(pl):	X11/KDE/Aplikacje
 License:	GPL
 Vendor:		Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
-Source0:	%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/multimedia/cdrom/%{name}-%{version}.tar.gz
 URL:		http://
 BuildRequires:	qt-devel >= 1.30
 BuildRequires:	kdelibs-devel
