@@ -1,22 +1,15 @@
-%define name keasycd
-%define version 0.1.8
-%define release 1
-%define prefix /opt/kde
-
-%define builddir $RPM_BUILD_DIR/%{name}-%{version}
-
-Summary: KEasyCD - KDE CD recording frontend
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Group: X11/KDE/Apps
-Copyright: GPL
-Vendor: Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
-Packager: Troy Engel <tengel@sonic.net>
-Source: %{name}-%{version}.tar.gz
-URL: http://
-Requires: qt >= 1.30 kdelibs
-BuildRoot: /tmp/build-%{name}-%{version}
+Summary:	KEasyCD - KDE CD recording frontend
+Name:		keasycd
+Version:	0.1.8
+Release:	1
+Group:		X11/KDE/Apps
+Copyright:	GPL
+Vendor:		Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
+Source:		%{name}-%{version}.tar.gz
+URL:		http://
+BuildPrereq:	qt-devel >= 1.30
+BuildPrereq:	kdelibs-devel
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 KEasyCD is a CD recording frontend for cdrecord, cdda2wav, cdparanoia,
@@ -36,7 +29,6 @@ make install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-rm -rf %{builddir}
 
 %files
 %defattr(-,root,root)
@@ -44,3 +36,8 @@ rm -rf %{builddir}
 %{prefix}/share/applnk/Applications/keasycd.kdelnk
 %{prefix}/share/doc/HTML/en/keasycd/*
 %{prefix}/share/icons/*
+
+%changelog
+* Sat Jul 10 1999 
+  []
+- based on spec written by Troy Engel <tengel@sonic.net>.
