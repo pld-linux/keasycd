@@ -7,8 +7,8 @@ Copyright:	GPL
 Vendor:		Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
 Source:		%{name}-%{version}.tar.gz
 URL:		http://
-BuildPrereq:	qt-devel >= 1.30
-BuildPrereq:	kdelibs-devel
+BuildRequires:	qt-devel >= 1.30
+BuildRequires:	kdelibs-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
