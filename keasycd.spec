@@ -8,7 +8,7 @@ Vendor:		Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
 Group:		X11/Applications
 #Source0:	ftp://ftp.kde.org/pub/kde/unstable/apps/KDE1.x/multimedia/cdrom/%{name}-%{version}.tar.gz
 Source0:	http://ftp.kde.com/Multimedia/Audio/Burners_Rippers/KEasyCD/%{name}-%{version}.tar.gz
-# Source0-md5:	fca10d48b91768aad3963d64363053ad
+# Source0-md5:	2d4a211e737379f91245d20fb6158d8c
 BuildRequires:	kdelibs-devel >= 1.1
 BuildRequires:	kdelibs-devel < 2.0
 BuildRequires:	qt-devel >= 1.30
