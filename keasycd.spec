@@ -21,12 +21,19 @@ KEasyCD is a CD recording frontend for cdrecord, cdda2wav, cdparanoia,
 and mkisofs.
 
 %prep
-%setup -q
+%setup -q -n %{name}
 
 %build
-CXXFLAGS="%{rpmcflags}" CFLAGS="%{rpmcflags}" ./configure \
-	--prefix=%{_prefix} --with-install-root=$RPM_BUILD_ROOT
-%{__make}
+CXXFLAGS="%{rpmcflags}" 
+CFLAGS="%{rpmcflags} -I%{_prefix}/include/qt" 
+
+%configure2_13 \
+	--prefix=%{_prefix} \
+	--with-qt-dir=%{_prefix}/include/qt \
+	--with-qt-includes=%{_prefix}/include/qt \
+	--with-install-root=$RPM_BUILD_ROOT
+	
+%{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
