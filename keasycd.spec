@@ -27,16 +27,16 @@ cdrecord, cdda2wav, cdparanoia i mkisofs.
 %setup -q -n %{name}
 
 %build
-CXXFLAGS="%{rpmcflags}" 
-CFLAGS="%{rpmcflags} -I%{_includedir}/qt" 
+CXXFLAGS="%{rpmcflags}"
+CFLAGS="%{rpmcflags} -I%{_includedir}/qt"
 
 %configure2_13 \
 	--prefix=%{_prefix} \
 	--with-qt-dir=%{_includedir}/qt \
 	--with-qt-includes=%{_includedir}/qt \
 	--with-install-root=$RPM_BUILD_ROOT
-	
-%{__make} 
+
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
