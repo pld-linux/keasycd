@@ -2,7 +2,7 @@ Summary:	KEasyCD - KDE CD recording frontend
 Name:		keasycd
 Version:	0.1.8
 Release:	1
-Group:		X11/KDE/Apps
+Group:		X11/KDE/Applications
 Copyright:	GPL
 Vendor:		Marcel Borreda <marcel.borreda@post.rwth-aachen.de>
 Source:		%{name}-%{version}.tar.gz
