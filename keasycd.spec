@@ -9,7 +9,7 @@ Source:		%{name}-%{version}.tar.gz
 URL:		http://
 BuildRequires:	qt-devel >= 1.30
 BuildRequires:	kdelibs-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 KEasyCD is a CD recording frontend for cdrecord, cdda2wav, cdparanoia,
