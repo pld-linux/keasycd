@@ -11,8 +11,6 @@ BuildRequires:	qt-devel >= 1.30
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 KEasyCD is a CD recording frontend for cdrecord, cdda2wav, cdparanoia,
