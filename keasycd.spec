@@ -36,8 +36,3 @@ rm -rf $RPM_BUILD_ROOT
 %{prefix}/share/applnk/Applications/keasycd.kdelnk
 %{prefix}/share/doc/HTML/en/keasycd/*
 %{prefix}/share/icons/*
-
-%changelog
-* Sat Jul 10 1999 
-  []
-- based on spec written by Troy Engel <tengel@sonic.net>.
