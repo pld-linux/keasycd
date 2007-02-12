@@ -1,5 +1,5 @@
 Summary:	KEasyCD - KDE CD recording frontend
-Summary(pl):	KEasyCD - frontend KDE do nagrywania CD
+Summary(pl.UTF-8):   KEasyCD - frontend KDE do nagrywania CD
 Name:		keasycd
 Version:	0.1.9
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KEasyCD is a CD recording frontend for cdrecord, cdda2wav, cdparanoia,
 and mkisofs.
 
-%description -l pl
-KEasyCD jest s³u¿±cym do nagrywania CD frontendem KDE do programów
+%description -l pl.UTF-8
+KEasyCD jest sÅ‚uÅ¼Ä…cym do nagrywania CD frontendem KDE do programÃ³w
 cdrecord, cdda2wav, cdparanoia i mkisofs.
 
 %prep
