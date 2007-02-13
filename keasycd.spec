@@ -1,5 +1,5 @@
 Summary:	KEasyCD - KDE CD recording frontend
-Summary(pl.UTF-8):   KEasyCD - frontend KDE do nagrywania CD
+Summary(pl.UTF-8):	KEasyCD - frontend KDE do nagrywania CD
 Name:		keasycd
 Version:	0.1.9
 Release:	1
